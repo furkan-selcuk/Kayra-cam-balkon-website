@@ -2,6 +2,11 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  // Link açma fonksiyonu
+  const openLink = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-8">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -9,7 +14,7 @@ const Footer = () => {
         {/* Firma Bilgileri */}
         <div>
           <h3 className="text-xl font-bold text-white mb-4">Kayra Cam Balkon</h3>
-          <p>Adress:Horozluhan, gözüpek sokak no:9, Konya</p>
+          <p>Adres: Horozluhan, Gözüpek Sokak No:9, Konya</p>
           <p>Tel: +90 532 123 45 67</p>
           <p>Email: info@kayracambalkon.com</p>
         </div>
@@ -29,10 +34,30 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold text-white mb-4">Bizi Takip Edin</h3>
           <div className="flex space-x-4 text-2xl">
-            <a href="#" className="hover:text-blue-500"><FaFacebook /></a>
-            <a href="#" className="hover:text-pink-500"><FaInstagram /></a>
-            <a href="#" className="hover:text-blue-400"><FaLinkedin /></a>
-            <a href="#" className="hover:text-green-500"><FaWhatsapp /></a>
+            <button
+              onClick={() => openLink("https://www.facebook.com/")}
+              className="hover:text-blue-500"
+            >
+              <FaFacebook />
+            </button>
+            <button
+              onClick={() => openLink("https://www.instagram.com/")}
+              className="hover:text-pink-500"
+            >
+              <FaInstagram />
+            </button>
+            <button
+              onClick={() => openLink("https://www.linkedin.com/")}
+              className="hover:text-blue-400"
+            >
+              <FaLinkedin />
+            </button>
+            <button
+              onClick={() => openLink("https://wa.me/905321234567")}
+              className="hover:text-green-500"
+            >
+              <FaWhatsapp />
+            </button>
           </div>
         </div>
       </div>

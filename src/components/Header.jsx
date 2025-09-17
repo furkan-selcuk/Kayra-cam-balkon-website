@@ -45,7 +45,7 @@ const Header = ({ id }) => {
 
       {/* Telefon (masaüstü) */}
       <div className="hidden md:flex w-3/12 justify-center items-center text-black">
-        <FaPhone className="mr-2" /> +90 532 123 45 67
+        <FaPhone className="mr-2" /> +90 506 233 72 10
       </div>
 
       {/* Hamburger buton (mobil) */}
@@ -99,7 +99,7 @@ const Header = ({ id }) => {
 
           {/* Telefon */}
           <div className="flex items-center text-black pt-6 border-t border-gray-300 w-10/12 justify-center">
-            <FaPhone className="mr-2" /> +90 532 123 45 67
+            <FaPhone className="mr-2" /> +90 506 233 72 10
           </div>
         </div>
       </div>
